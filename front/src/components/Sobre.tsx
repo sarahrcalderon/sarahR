@@ -1,22 +1,35 @@
 import { Box, Grid, Typography } from "@mui/joy";
+import { useEffect } from "react";
 
 function Sobre() {
+  useEffect(() => {
+    const toggleDarkMode = () => {
+      document.body.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches);
+    };
+    
+    toggleDarkMode();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', toggleDarkMode);
+
+    return () => {
+      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', toggleDarkMode);
+    };
+  }, []);
+
   return (
-    <Grid container spacing={5} sx={{ alignItems: "center"}}>
+    <Grid container spacing={5} sx={{ alignItems: "center" }}>
       <Grid xs={12} sm={6}>
-        <Typography level="h4" sx={{ mb: 1 }}>
+        <Typography level="h4" sx={{ mb: 1, color: "var(--text-color)" }}>
           Um Pouco Sobre Mim
         </Typography>
-        <Typography>
-        Meu nome é Sarah, sou estudante de Engenharia de Software, atuei como designer gráfico por três anos, 
-        o que me permitiu iniciar minha jornada no mundo da tecnologia. Minha formação em design não apenas 
-        abriu portas para o universo do front-end e experiência do usuário, mas também aprimorou significativamente 
-        minhas habilidades de comunicação e escrita. Além disso, possuo conhecimento em lógica de programação, sendo assim 
-        aplico a qualquer linguagem que seja necessária. Sou uma pessoa que está sempre em busca de aprimoramento, e acredito que minha 
-        abordagem multidisciplinar será um diferencial valioso em um cenário dinâmico entre design e tecnologia.
+        <Typography sx={{ color: "var(--text-color)" }}>
+          Meu nome é Sarah, sou estudante de Engenharia de Software, atuei como designer gráfico por três anos, 
+          o que me permitiu iniciar minha jornada no mundo da tecnologia. Minha formação em design não apenas 
+          abriu portas para o universo do front-end e experiência do usuário, mas também aprimorou significativamente 
+          minhas habilidades de comunicação e escrita. Além disso, possuo conhecimento em lógica de programação, sendo assim 
+          aplico a qualquer linguagem que seja necessária. Sou uma pessoa que está sempre em busca de aprimoramento, e acredito que minha 
+          abordagem multidisciplinar será um diferencial valioso em um cenário dinâmico entre design e tecnologia.
         </Typography>
       </Grid>
-
       <Grid xs={12} sm={6} sx={{ display: "flex", justifyContent: "center" }}>
         <Box
           component="img"
