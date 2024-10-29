@@ -1,0 +1,34 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+const Footer = () => {
+  return (
+    <nav className="menu d-flex justify-content-center p-3">
+      <ul className="nav">
+        <li className="nav-item">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-github"></i> 
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="https://medium.com" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-medium"></i> 
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-behance"></i> 
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-linkedin"></i> 
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Footer;
