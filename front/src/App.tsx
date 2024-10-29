@@ -1,9 +1,23 @@
 import React from 'react';
 import Home from './components/Home';
-import { CssVarsProvider, extendTheme } from '@mui/joy/styles'; // Para Material UI Joy
-import { ThemeProvider, createTheme } from '@mui/material/styles'; // Para Material UI tradicional
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { CssVarsProvider, extendTheme } from '@mui/joy/styles'; 
+import { ThemeProvider, createTheme } from '@mui/material/styles'; 
 import { grey } from '@mui/material/colors';
 import './App.css';
+import Tradutor from './components/Tradutor';
+import Habilidades from './components/Habilidades';
+import Sobre from './components/Sobre';
+import Footer from './components/Footer';
+import Galeria from './components/Galeria';
+
+
+declare global {
+  interface Window {
+    googleTranslateElementInit: () => void;
+  }
+}
 
 function App() {
   const joyTheme = extendTheme({
@@ -34,13 +48,20 @@ function App() {
 
   return (
  <>
+ <div className="container">
     <CssVarsProvider theme={joyTheme}>
       <ThemeProvider theme={materialTheme}> 
       <Home />
+      <Tradutor/>
+      <Sobre/>
+      <Habilidades/>
+      <Galeria/>
+      <Footer/>
+      
         
       </ThemeProvider>
     </CssVarsProvider>
-
+</div>
  </>
   );
 }

@@ -1,0 +1,37 @@
+import { Box, Grid, Typography } from "@mui/joy";
+
+function Sobre() {
+  return (
+    <Grid container spacing={5} sx={{ alignItems: "center"}}>
+      <Grid xs={12} sm={6}>
+        <Typography level="h4" sx={{ mb: 1 }}>
+          Um Pouco Sobre Mim
+        </Typography>
+        <Typography>
+        Meu nome é Sarah, sou estudante de Engenharia de Software, atuei como designer gráfico por três anos, 
+        o que me permitiu iniciar minha jornada no mundo da tecnologia. Minha formação em design não apenas 
+        abriu portas para o universo do front-end e experiência do usuário, mas também aprimorou significativamente 
+        minhas habilidades de comunicação e escrita. Além disso, possuo conhecimento em lógica de programação, sendo assim 
+        aplico a qualquer linguagem que seja necessária. Sou uma pessoa que está sempre em busca de aprimoramento, e acredito que minha 
+        abordagem multidisciplinar será um diferencial valioso em um cenário dinâmico entre design e tecnologia.
+        </Typography>
+      </Grid>
+
+      <Grid xs={12} sm={6} sx={{ display: "flex", justifyContent: "center" }}>
+        <Box
+          component="img"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQEqroRg6A83Kw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721738360681?e=1735776000&v=beta&t=Tohpmd2uSoU3DY2rynPibGFO36XC75lqKyP8ajz34RE"
+          alt="Imagem descritiva"
+          sx={{
+            width: 150,
+            height: 150,
+            borderRadius: "50%", 
+            objectFit: "cover",
+          }}
+        />
+      </Grid>
+    </Grid>
+  );
+}
+
+export default Sobre;
