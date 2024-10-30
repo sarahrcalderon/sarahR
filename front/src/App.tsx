@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Galeria from './components/Galeria';
 
 
+
 declare global {
   interface Window {
     googleTranslateElementInit: () => void;
