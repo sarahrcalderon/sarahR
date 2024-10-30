@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/joy";
+import { Box, Grid, Typography, Button } from "@mui/joy";
 import { useEffect } from "react";
 
 function Sobre() {
@@ -15,6 +15,15 @@ function Sobre() {
     };
   }, []);
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/curriculo.pdf';
+    link.setAttribute('download', 'curriculo.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Grid container spacing={5} sx={{ alignItems: "center" }}>
       <Grid xs={12} sm={6}>
@@ -29,6 +38,14 @@ function Sobre() {
           aplico a qualquer linguagem que seja necessária. Sou uma pessoa que está sempre em busca de aprimoramento, e acredito que minha 
           abordagem multidisciplinar será um diferencial valioso em um cenário dinâmico entre design e tecnologia.
         </Typography>
+        <Button
+          variant="solid"
+          color="primary"
+          onClick={handleDownload}
+          sx={{ margin: '10px', padding: '8px 16px' }}
+        >
+          Baixar Currículo
+        </Button>
       </Grid>
       <Grid xs={12} sm={6} sx={{ display: "flex", justifyContent: "center" }}>
         <Box
