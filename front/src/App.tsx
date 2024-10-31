@@ -7,10 +7,10 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 import './App.css';
 import Tradutor from './components/Tradutor';
-import Habilidades from './components/Habilidades';
 import Sobre from './components/Sobre';
 import Footer from './components/Footer';
 import Galeria from './components/Galeria';
+import ListaDeConhecimentos from './components/ListaDeConhecimentos';
 
 
 
@@ -61,11 +61,9 @@ function App() {
       <Home />
       <Tradutor/>
       <Sobre/>
-      <Habilidades/>
+      <ListaDeConhecimentos/>
       <Galeria/>
-      <Footer/>
-      
-        
+      <Footer/>    
       </ThemeProvider>
     </CssVarsProvider>
 </div>

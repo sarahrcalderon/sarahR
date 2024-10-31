@@ -46,7 +46,7 @@ const Galeria: React.FC = () => {
               }}
               onClick={() => window.open("https://www.behance.net/sarahcalderonn", "_blank")}
             >
-              ⭐
+              
             </IconButton>
           </div>
           <AspectRatio minHeight="120px" maxHeight="200px">
