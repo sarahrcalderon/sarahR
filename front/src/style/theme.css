@@ -5,10 +5,17 @@
   
   body {
     --text-color: #1d1d1d;
+    --text-color: #1d1d1d;
+  --button-bg-color: #333333; 
+  --button-text-color: #eceaea; 
+  --button-hover-bg-color: #8000b2;
   }
   
   body.dark {
     --text-color: #a7a7a7;
+    --button-bg-color: #333333; 
+    --button-text-color: #a7a7a7; 
+    --button-hover-bg-color: #313131;
   }
   
   
