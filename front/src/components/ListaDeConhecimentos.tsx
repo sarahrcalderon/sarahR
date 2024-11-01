@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box } from "@mui/joy";
 
-
 function ListaDeConhecimentos() {
   const conhecimentos = [
     "HTML",
@@ -12,9 +11,9 @@ function ListaDeConhecimentos() {
     "TypeScript",
     "Docker",
     "Design de Interface (UI)",
-    "Automação front-end com NPM",
+    "SASS",
     "Experiência de usuário (UX)",
-    "Git e GitHub",
+    "Bootstrap",
     "Sass",
   ];
 

@@ -50,17 +50,7 @@ function Sobre() {
             objectFit: "cover",
           }}
         />
-        <AccordionGroup sx={{ maxWidth: 300 }}>
-          <Accordion>
-            <AccordionSummary>DIA A DIA 🤙</AccordionSummary>
-            <AccordionDetails>
-              Eu curto jogar, Elder Scrolls e D&D são minhas franquias
-              favoritas, tenho um gato amarelo que me acompanha em todos os
-              lugares.
-            </AccordionDetails>
-          </Accordion>
-        </AccordionGroup>
-        <Typography level="h4" sx={{ mb: 1, color: "var(--text-color)" }}>
+        <Typography level="h4" sx={{ mb: 2, color: "var(--text-color)", marginTop:"30px" }}>
           Um Pouco Sobre Mim
         </Typography>
         <Typography sx={{ color: "var(--text-color)" }}>

@@ -17,7 +17,7 @@ const Home = () => {
         }}
       >
         {["Design", "Desenvolvimento", "Artigos"].map((item: string) => (
-          <Link key={item} color="neutral" href="#basics">
+          <Link key={item} color="neutral" href="https://linktr.ee/sarahrcalderon">
             {item}
           </Link>
         ))}
