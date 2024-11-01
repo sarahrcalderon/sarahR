@@ -7,25 +7,27 @@ const Footer = () => {
     <nav className="menu d-flex justify-content-center p-3">
       <ul className="nav">
         <li className="nav-item">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-            <i className="bi bi-github"></i> 
+          <a href="https://github.com/sarahrcalderon" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-github"></i>
           </a>
         </li>
         <li className="nav-item">
-          <a href="https://medium.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-            <i className="bi bi-medium"></i> 
+          <a href="https://medium.com/@sarahrcalderonn" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-medium"></i>
           </a>
         </li>
         <li className="nav-item">
-          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" className="nav-link">
-            <i className="bi bi-behance"></i> 
+          <a href="https://www.behance.net/sarahcalderonn" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-behance"></i>
           </a>
         </li>
         <li className="nav-item">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-            <i className="bi bi-linkedin"></i> 
+          <a href="https://www.linkedin.com/in/srcalderon/" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <i className="bi bi-linkedin"></i>
           </a>
         </li>
+        
+        
       </ul>
     </nav>
   );

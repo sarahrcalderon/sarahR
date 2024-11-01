@@ -2,6 +2,7 @@
 @import url('./style/theme.css');
 @import url('./style/tradutor.css');
 @import url('./style/habilidades.css');
+@import url('./style/projetos.css');
 
 .App {
   text-align: center;
@@ -14,14 +15,14 @@ body{
 
 
 .App-link {
-  color: #61dafb;
+  color: #ec058c;
 }
 
 
 
 
 .nav-link {
-  color: #560688; 
+  color: #ff0ba1; 
   margin: 0 5px; 
   display: flex;
   align-items: center;
@@ -29,7 +30,7 @@ body{
 }
 
 .nav-link:hover {
-  color: #6e2899; 
+  color: #c0c0c0; 
 }
 
 .nav-link i {

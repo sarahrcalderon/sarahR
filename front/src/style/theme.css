@@ -3,21 +3,22 @@
     transition:  0.2s linear;
   }
   
+
+  
   body {
     --text-color: #1d1d1d;
-    --text-color: #1d1d1d;
-  --button-bg-color: #333333; 
-  --button-text-color: #eceaea; 
-  --button-hover-bg-color: #8000b2;
-  }
-  
-  body.dark {
+    --button-bg-color: #dad6d6; 
+    --button-text-color: #1f1f1f; 
+    --button-hover-bg-color: #808080;
+    
+}
+
+body.dark {
     --text-color: #a7a7a7;
     --button-bg-color: #333333; 
     --button-text-color: #a7a7a7; 
-    --button-hover-bg-color: #313131;
-  }
-  
+}
+
   
   
   body.dark {background-color: #1f2020;} 
