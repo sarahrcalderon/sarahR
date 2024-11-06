@@ -14,7 +14,7 @@ function ListaDeConhecimentos() {
     "SASS",
     "Experiência de usuário (UX)",
     "Bootstrap",
-    "Sass",
+    "Wireframe",
   ];
 
   return (
